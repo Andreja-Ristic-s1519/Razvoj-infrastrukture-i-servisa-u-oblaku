@@ -1,0 +1,8 @@
+apiVersion: apps/v1
+kind: Pod
+metadata:
+  name: client-pod
+spec:
+  containers:
+    - name: client-container
+      image: rile/client:1.0
