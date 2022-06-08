@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: server-pod
+spec:
+  containers:
+    - name: server-container
+      image: rile/server:1.0
+  ports:
+    - containerPort: 8081
+  hostname: userapi
